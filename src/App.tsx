@@ -1,11 +1,13 @@
-import Header from "./components/Header/Header";
-import Section from "./components/section/Section";
+import Hero from "./components/Hero";
+import Section from "./components/Section";
 
 
 function App() {
   return (
-    <div className="App">
-      <Header />
+    <div style={{
+      overflow: 'hidden',
+    }}>
+      <Hero />
       <Section />
     </div>
   );
