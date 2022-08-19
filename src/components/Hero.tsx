@@ -67,6 +67,7 @@ const Hero = () => {
           justifyContent: "center",
           flexWrap: "wrap",
           paddingTop: "10%",
+          width: '100%',
         }}
       >
         <Box
@@ -74,21 +75,22 @@ const Hero = () => {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            flexDirection: "column",
           }}
+          width={{ md: '30%', xs: '90%' }}
         >
           <Box
             sx={{
               textAlign: "center",
+              width: '100%',
             }}
           >
             <Stack direction={{ xs: "column", sm: "row" }}>
-              <Box margin={{ sm: "10px" }}>
+              <Box margin={{ sm: "10px" }} sx={{width: "100%"}}>
                 <Button
                   variant="contained"
                   sx={{
                     marginBottom: "20px",
-                    width: "auto",
+                    width: "100%",
                     padding: "16px 25px",
                     border: "2px #603ac7",
                     borderRadius: "4px",
@@ -112,12 +114,12 @@ const Hero = () => {
                   Зарегистрироваться
                 </Button>
               </Box>
-              <Box margin={{ sm: "10px" }}>
+              <Box margin={{ sm: "10px" }} sx={{width: "100%"}}>
                 <Button
                   variant="contained"
                   sx={{
                     marginBottom: "20px",
-                    width: "auto",
+                    width: "100%",
                     padding: "16px 25px",
                     border: "1px solid #6a72e7",
                     borderRadius: "4px",
@@ -161,7 +163,7 @@ const Hero = () => {
         </Box>
       </Box>
 
-      <Box sx={{ margin: "20px 50px" }}>
+      <Box sx={{ margin: "20px 10px" }}>
         <Slider {...settings}>
           <div>
             <Box

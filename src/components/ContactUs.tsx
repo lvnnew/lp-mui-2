@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from "react";
 import "@fontsource/montserrat/400.css";
 import "@fontsource/montserrat/500.css";
@@ -7,20 +8,18 @@ import { Box, Typography, TextField, Button } from "@mui/material";
 const ContactUs = () => {
   const [email, setEmail] = useState("");
   const [firstName, setFirstName] = useState("");
-  const [subject, setSubject] = useState("");
-  const [message, setMessage] = useState("");
+  const [site, setSite] = useState("");
+  const [phone, setPhone] = useState("");
 
   const submitForm = (e: any) => {
     e.preventDefault();
-    console.log({ email, firstName, subject, message });
+    console.log({ email, firstName, site, phone });
   };
 
   return (
     <Box
       sx={{
         flexGrow: 1,
-        maxWidth: "700px",
-        margin: "auto",
       }}
     >
       <Typography
@@ -45,48 +44,55 @@ const ContactUs = () => {
         <TextField
           label="Имя"
           variant="outlined"
+          size="small"
           fullWidth
           sx={{
-            marginBottom: "20px !important",
+            marginBottom: "10px !important",
+            border: '0.7px solid #dfdfdf',
           }}
           value={firstName}
           onChange={(e) => setFirstName(e.target.value)}
         />
 
         <TextField
-          label="Email"
+          label="Ваш сайт"
           variant="outlined"
+          size="small"
           fullWidth
           sx={{
-            marginBottom: "20px !important",
+            marginBottom: "10px !important",
           }}
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
+          value={site}
+          onChange={(e) => setSite(e.target.value)}
         />
 
         <TextField
           label="Телефон для связи"
           variant="outlined"
+          size="small"
           fullWidth
           sx={{
-            marginBottom: "20px !important",
+            marginBottom: "10px !important",
           }}
-          value={subject}
-          onChange={(e) => setSubject(e.target.value)}
+          value={phone}
+          onChange={(e) => setPhone(e.target.value)}
         />
+
         <TextField
-          label="Телефон для связи"
+          label="Email"
           variant="outlined"
+          size="small"
           fullWidth
           sx={{
-            marginBottom: "20px !important",
+            marginBottom: "10px !important",
           }}
-          value={subject}
-          onChange={(e) => setSubject(e.target.value)}
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
         />
+
         <Typography
           sx={{
-            marginTop: "30px",
+            marginTop: "20px",
             marginBottom: "16px",
             fontFamily: "Montserrat,sans-serif",
             color: "#010e28",
@@ -96,7 +102,7 @@ const ContactUs = () => {
           }}
         >
           Оставляя заявку, вы даете нам разрешение связаться с вами и
-          соглашаетесь с <a href="#">Политикой конфиденциальности</a>
+          соглашаетесь с <a>Политикой конфиденциальности</a>
         </Typography>
         <Button
           variant="contained"

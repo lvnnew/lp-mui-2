@@ -116,19 +116,20 @@ const Section = () => {
               <Grid
                 xs={18}
                 md={8}
-                sx={{ margin: "20px",}}
-                paddingRight={{ md: '20px'}}
+                sx={{ margin: "10px" }}
+                marginRight={{ md: "40px" }}
               >
                 <Typography
                   sx={{
-                    marginTop: "10px",
                     marginBottom: "50px",
                     fontFamily: "Montserrat,sans-serif",
                     color: "#fff",
                     fontSize: "48px",
                     lineHeight: 1.2,
                     fontWeight: 700,
+                    textAlign: "left",
                   }}
+                  marginTop={{ md: "20px" }}
                 >
                   Чем вам поможет Aitarget One
                 </Typography>
@@ -141,6 +142,7 @@ const Section = () => {
                     fontSize: "20px",
                     lineHeight: 1.4,
                     fontWeight: 600,
+                    textAlign: "left",
                   }}
                 >
                   Запишитесь на демонстрацию, чтобы узнать обо всех возможностях
@@ -149,11 +151,12 @@ const Section = () => {
                 <Typography
                   sx={{
                     marginTop: "40px",
-                    marginBottom: "20px",
+                    marginBottom: "40px",
                     fontFamily: "Montserrat,sans-serif",
                     color: "#fff",
                     fontSize: "16px",
                     lineHeight: 1.4,
+                    textAlign: "left",
                   }}
                 >
                   Расскажем, как использовать Aitarget One именно для вашего
@@ -171,7 +174,12 @@ const Section = () => {
                   border: "1px rgba(172,170,250,.12)",
                   borderRadius: "16px",
                   backgroundColor: "#fff",
+
+                  position: "relative",
+                  maxWidth: "475px",
+                  minHeight: "454px",
                 }}
+                marginLeft={{ md: "60px" }}
               >
                 <ContactUs />
               </Grid>
