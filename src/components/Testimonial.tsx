@@ -1,6 +1,5 @@
 import React from 'react';
 import { Typography, Box, Card, CardContent, Grid } from '@mui/material';
-import { Avatar } from '@mui/material';
 import useStyles from '../styles/styles';
 
 const Testimonial = () => {
