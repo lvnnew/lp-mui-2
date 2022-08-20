@@ -26,7 +26,7 @@ const Section = () => {
     },
   ];
   return (
-    <Box sx={{ flexGrow: 1, minHeight: "400px", marginTop: "25px" }}>
+    <Box sx={{ flexGrow: 1, height: "100%", marginTop: "25px" }}>
       <Typography
         sx={{ fontFamily: "Montserrat", fontSize: 14, textAlign: "center" }}
       >

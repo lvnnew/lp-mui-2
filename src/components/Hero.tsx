@@ -18,7 +18,7 @@ const Hero = () => {
     slidesToScroll: 1,
     initialSlide: 0,
     touchMove: true,
-    adaptiveHeight: true,
+    adaptiveHeight: false,
     responsive: [
       {
         dots: false,
